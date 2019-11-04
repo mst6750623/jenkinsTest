@@ -1,0 +1,21 @@
+db2stop force
+db2start
+
+127.0.0.1:11080
+
+db2 get instance 
+db2set db2comm=tcpip
+db2set -all
+db2 update dbm cfg using svcename 50230 
+db2stop
+db2start
+
+使右边有字：
+添加连接
+然后用上面的一串代码
+
+
+
+添加实例
+localhost
+administrator（在资源管理器中取消禁用）
